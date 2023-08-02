@@ -1,0 +1,68 @@
+﻿body {
+    color:whitesmoke;
+    background-color: #3c5060;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (max-width: 800px) {
+    table td {
+        height: 50px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+        table td[colspan="3"] {
+            width: 100%;
+        }
+}
+
+@media (max-width: 700px) {
+    table td {
+        height: 50px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+        table td[colspan="3"] {
+            width: 100%;
+        }
+}
+
+@media (max-width: 600px) {
+    table td {
+        height: 50px;
+        width: 100px;
+        text-align: center;
+    }
+
+        table td[colspan="3"] {
+            width: auto;
+        }
+}
+
+@media (max-width: 400px) {
+    table td {
+        height: 40px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+        table td[colspan="3"] {
+            width: 100%;
+        }
+}
+
+@media (max-width: 300px) {
+    table td {
+        height: 30px;
+        width: 70px;
+        font-size: 12px;
+    }
+
+        table td[colspan="3"] {
+            width: 100%;
+        }
+}
+
+table {
+    box-shadow: 13px 13px 20px black;
+}

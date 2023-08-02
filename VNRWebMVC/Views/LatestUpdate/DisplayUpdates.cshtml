@@ -1,0 +1,26 @@
+﻿@model IEnumerable<VNRWebMVC.ViewModels.LatestUpdateVM>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/Display.css">
+</head>
+<body>
+    <div>
+        @Html.Partial("_Create", new VNRWebMVC.ViewModels.LatestUpdateVM())
+    </div>
+    <hr />
+    <div class="updates">
+        <p>Latest Updates</p>
+        @foreach (var item in Model)
+        {
+            
+                <div class="alert alert-primary">
+                    <strong>@Html.DisplayFor(a => item.Information)&nbsp;&nbsp;---&nbsp;&nbsp;</strong> @Html.DisplayFor(a => item.Name)
+                </div>
+            
+
+        }
+    </div>
+</body>
+</html>
+
+

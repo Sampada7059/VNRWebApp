@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+    <link rel="stylesheet" href="~/Content/Home.css">
+    <!-- Include SweetAlert CSS and JavaScript -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    <h3>Welcome to VNR Institute of Technology</h3>
+    <hr />
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <script>
+        // Show success message using SweetAlert
+        swal.fire({
+            title: "Success",
+            text: "@TempData["SuccessMessage"]",
+            icon: "success",
+            confirmButtonText: "OK",
+            customClass: {
+                popup: 'custom-success-message'
+            }
+        });
+        // Automatically dismiss the message after 5 seconds
+        setTimeout(function() {
+            swal.close();
+        }, 5000);
+        </script>
+    }
+</body>
+</html>

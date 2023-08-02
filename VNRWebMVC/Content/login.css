@@ -1,0 +1,159 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.bd {
+    background-color: #3c5060;
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+/* Custom styles for the loader overlay */
+.wrapper #loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Set a high z-index value to ensure it's on top of other elements */
+}
+
+    .wrapper #loader img {
+        height: 100px;
+        width: 100px;
+    }
+
+.validation-summary::before {
+    content: none;
+}
+
+.field-container {
+    position: relative;
+    border: none;
+    box-shadow: inset 4px 4px 4px #cbced1, inset -4px -4px 4px #fff;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.validation-message {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 15px;
+    color: orangered;
+    white-space: pre-line;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+form #Username, #Password {
+    font-size: 15px;
+    color: whitesmoke;
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 25px;
+    padding-left: 35px;
+    background-color: transparent;
+}
+
+form .errorMessage {
+    padding-top: 0px;
+}
+
+.text-danger {
+    font-size: 13px;
+    color: orangered;
+}
+
+.wrapper {
+    max-width: 350px;
+    min-height: 140px;
+    margin: 60px auto;
+    padding: 40px 30px 30px 30px;
+    background-color: #283d52;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px black;
+}
+
+.logo {
+    width: 80px;
+    margin: auto;
+}
+
+    .logo img {
+        background-color: #555555;
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0px 0px 3px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaa7, -8px -8px 15px #fff;
+    }
+
+.wrapper .name {
+    font-weight: 900;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+form .fas {
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.wrapper .form-field input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.wrapper .form-field .fas {
+    color: #555;
+}
+
+.wrapper .btn {
+    box-shadow: none;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px black;
+    letter-spacing: 1.3px;
+    font-size: 15px;
+    background-color: #ffdead;
+    color: #555555;
+    font-weight: bold;
+}
+
+    .wrapper .btn:hover {
+        background-color: navajowhite;
+    }
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #03A9F4;
+}
+
+    .wrapper a:hover {
+        color: #039BE5;
+    }
+
+@media(max-width: 380px) {
+    .wrapper {
+        margin: 30px 20px;
+        padding: 40px 15px 15px 15px;
+    }
+}

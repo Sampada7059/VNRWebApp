@@ -1,0 +1,153 @@
+﻿body {
+    background-color: #3c5060;
+    color:whitesmoke;
+}
+.containerr {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #283d52;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 15px #cbced0;
+}
+
+h2 {
+    text-align: center;
+}
+hr {
+    color: #03a9f4;
+    background-color: #ffdead;
+    height: 1px;
+    border: none;
+    margin: 10px 0;
+}
+p{
+    color:orangered;
+}
+form label {
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+form .gender {
+    padding-right: 40px;
+    }
+form .male {
+    padding-top: 2px
+}
+    form .female {
+        margin-left: 40px;
+        padding-top: 2px
+    }
+form .space {
+    margin-left: 140px;
+}
+form .btn {
+    height: 20px;
+    width: 20px;
+    margin-left: 17px;
+    margin-top: 4px;
+}
+.errorMessage {
+    color: orangered;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    input[type="password"]:focus {
+        border-color: #000;
+    }
+
+.form-group.inline {
+    display: flex;
+    gap: 10px;
+}
+
+    .form-group.inline label {
+        flex-basis: 30%;
+    }
+
+    .form-group.inline input[type="text"],
+    .form-group.inline input[type="email"],
+    .form-group.inline input[type="tel"],
+    .form-group.inline input[type="password"] {
+        flex-basis: 70%;
+    }
+
+.form-group.full-width {
+    width: 100%;
+}
+
+    .form-group.full-width label {
+        display: inline-block;
+        width: 30%;
+    }
+
+    .form-group.full-width input[type="text"],
+    .form-group.full-width input[type="email"],
+    .form-group.full-width input[type="tel"],
+    .form-group.full-width input[type="password"] {
+        display: inline-block;
+        width: 70%;
+    }
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffdead;
+    color: #555555;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+   
+
+@@media (max-width: 767px) {
+    .form-group.inline {
+        flex-direction: column;
+    }
+
+        .form-group.inline label {
+            width: 100%;
+        }
+
+        .form-group.inline input[type="text"],
+        .form-group.inline input[type="email"],
+        .form-group.inline input[type="tel"],
+        .form-group.inline input[type="password"] {
+            width: 100%;
+        }
+
+    .form-group.full-width label,
+    .form-group.full-width input[type="text"],
+    .form-group.full-width input[type="email"],
+    .form-group.full-width input[type="tel"],
+    .form-group.full-width input[type="password"] {
+        width: 100%;
+    }
+}

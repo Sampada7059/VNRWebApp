@@ -1,0 +1,24 @@
+﻿body {
+    background-color: #3c5060;
+}
+button, .form-control, .alert {
+    box-shadow: 13px 13px 20px black;
+}
+hr {
+    color: #03a9f4;
+    background-color: #ffdead;
+    height: 1px;
+    border: none;
+    margin: 10px 0;
+}
+p {
+    color: whitesmoke; 
+    font-size:18px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.btn {
+    background-color: #ffdead;
+    color: #555555;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -1,0 +1,18 @@
+﻿body {
+    color: #ffdead;
+    background-color: #3c5060;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+hr {
+    color: #03a9f4;
+    background-color: #ffdead;
+    height: 1px;
+    border: none;
+    margin: 10px 0;
+}
+.custom-success-message {
+    background-color: #283d52;
+    color: whitesmoke;
+    box-shadow: 10px 10px 20px black;
+}

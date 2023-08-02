@@ -1,0 +1,57 @@
+﻿.navbar {
+    background-color: #283d52;
+    box-shadow: 5px 5px 15px black, -13px -13px 20px #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+span {
+    color: navajowhite;
+}
+
+.social-part .fa {
+    padding-left: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 20px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ul .head a{
+    text-decoration:none;
+    color:whitesmoke;
+    font-size:28px;
+
+}
+
+
+.custom-dropdown-menu {
+    left: 20% !important;
+    transform: translateX(-20%);
+    box-shadow: 13px 13px 20px black;
+}
+
+
+nav ul li .faicon {
+    color: navajowhite;
+    text-decoration: none;
+}
+nav ul li .dd {
+    padding-left: 20px;
+    color: #555555;
+    background-color: wheat;
+    text-decoration:none;
+}
+
+nav ul li ul li #user {
+    text-decoration: none;
+    color: #555555;
+}
+
+nav ul #nameContainer {
+    font-size: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold
+}

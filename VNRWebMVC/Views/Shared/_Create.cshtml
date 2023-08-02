@@ -1,0 +1,36 @@
+﻿@model VNRWebMVC.ViewModels.LatestUpdateVM
+
+
+
+@using (Html.BeginForm("DisplayUpdates", "LatestUpdate", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <p>Information</p>
+        @Html.TextAreaFor(model => model.Information, new { @class = "form-control", placeholder = "Enter your update here", id = "informationTextArea" })
+        @Html.ValidationMessageFor(model => model.Information)
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CreatedBy, new { htmlAttributes = new { style = "display: none;", Value = @Session["userID"] } })
+        </div>
+    </div>
+
+
+
+    <div class="button-container">
+        <button id="submitButton" type="submit" class="btn" disabled>Submit</button>
+    </div>
+    <br />
+}
+
+
+
+<script>
+    $(document).ready(function () {
+        $('#informationTextArea').on('input', function () {
+            var inputValue = $(this).val().trim();
+            $('#submitButton').prop('disabled', inputValue === '');
+        });
+    });
+</script>

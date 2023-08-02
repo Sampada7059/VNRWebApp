@@ -1,0 +1,101 @@
+﻿@model VNRWebMVC.ViewModels.TeacherVM
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/RegisterTeacher.css">
+    <title>Teacher Registration Form</title>
+    
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div class="containerr">
+            <h4>Teacher Registration Form</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "errorMessage" })
+            <p>All fields are mandatory..!</p>
+
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", id = "name" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "errorMessage" })
+                </div>
+                <div class="form-group inline">
+
+                    <label class="gender" for="gender">Gender:</label>
+                    <label class="male">Male</label>
+                    @Html.RadioButtonFor(model => model.Gender, "Male", new { @class = "form-control btn" })
+                    <label class="female">Female</label>
+
+                    @Html.RadioButtonFor(model => model.Gender, "Female", new { @class = "form-control btn" })
+                    <div class="space"></div>
+                </div>
+                <div class="form-group">
+                    @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "errorMessage" })
+                    <label for="department">Department:</label>
+                    @Html.DropDownListFor(model => model.Department, new List<SelectListItem>
+                    {
+                        new SelectListItem { Text = "Computer Science", Value = "CSE" },
+                        new SelectListItem { Text = "Electronics & Communication", Value = "ECE" },
+                        new SelectListItem { Text = "Civil", Value = "CIV" },
+                        new SelectListItem { Text = "Mechanical", Value = "MEC" },
+                        new SelectListItem { Text = "Automobile", Value = "AUT" },
+                        new SelectListItem { Text = "Information Science", Value = "ISE" },
+                        new SelectListItem { Text = "Electrical & Electronics", Value = "EEE" }
+                    }, "Select Department", new { @class = "form-control", id = "Department" })
+                    @Html.ValidationMessageFor(model => model.Department, "", new { @class = "errorMessage" })
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", id = "email" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "errorMessage" })
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    @Html.EditorFor(model => model.Phone_Number, new { htmlAttributes = new { @class = "form-control", id = "phone" } })
+                    @Html.ValidationMessageFor(model => model.Phone_Number, "", new { @class = "errorMessage" })
+                </div>
+                <div class="form-group">
+                    <label for="door">Door Number:</label>
+                    @Html.EditorFor(model => model.Door_Number, new { htmlAttributes = new { @class = "form-control", id = "door" } })
+                    @Html.ValidationMessageFor(model => model.Door_Number, "", new { @class = "errorMessage" })
+                </div>
+                <div class="form-group">
+                    <label for="street">Street:</label>
+                    @Html.EditorFor(model => model.Street, new { htmlAttributes = new { @class = "form-control", id = "street" } })
+                    @Html.ValidationMessageFor(model => model.Street, "", new { @class = "errorMessage" })
+                </div>
+                <div class="form-group">
+                    <label for="area">Area:</label>
+                    @Html.EditorFor(model => model.Area, new { htmlAttributes = new { @class = "form-control", id = "area" } })
+                    @Html.ValidationMessageFor(model => model.Area, "", new { @class = "errorMessage" })
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control", id = "city" } })
+                    @Html.ValidationMessageFor(model => model.City, "", new { @class = "errorMessage" })
+                </div>
+                <div class="form-group">
+                    <label for="pincode">Pincode:</label>
+                    @Html.EditorFor(model => model.Pincode, new { htmlAttributes = new { @class = "form-control", id = "pincode" } })
+                    @Html.ValidationMessageFor(model => model.Pincode, "", new { @class = "errorMessage" })
+                </div>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control", id = "username" } })
+                    @Html.ValidationMessageFor(model => model.Username, "", new { @class = "errorMessage" })
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    @Html.PasswordFor(model => model.Password, new { @class = "form-control" } )
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "errorMessage" })
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    }
+</body>
+</html>
